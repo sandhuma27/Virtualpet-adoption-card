@@ -1,0 +1,125 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #d3f1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+.foot{
+    height: 40px;
+    width:40px;
+    display:flex;
+    align-items:flex-start;
+}
+
+.pet-image img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #6ec6ca;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(110, 198, 202, 0.6);
+}
+
+
+
+.pet-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.pet-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #555;
+  text-align: left;
+}
+li{
+    padding: 5px;
+}
+
+.status {
+  color: #2e7d32;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.status span {
+  color: #4caf50;
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.adopt {
+  background-color: #6ec6ca;
+  color: white;
+}
+
+.adopt:hover {
+  background-color: #53b3ba;
+}
+
+.info {
+  background-color: #eeeeee;
+  color: #333;
+}
+
+.info:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .pet-name {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
